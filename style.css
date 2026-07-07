@@ -27,7 +27,7 @@ code {
 
 /* Potongan flag kedua disisipkan lewat pseudo-element ::after */
 .css-hint::after {
-  /* content: "1n_pl41n_"; */
+  content: "1n_pl41n_";
   font-weight: bold;
   color: #f472b6;
 }
