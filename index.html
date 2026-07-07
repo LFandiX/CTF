@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Inspector Challenge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Petunjuk 1: potongan pertama flag ada di sini -> CTF{h1dd3n_ -->
+
+  <div class="container">
+    <h1>🔍 Selamat Datang di Web Inspector Challenge</h1>
+    <p>Flag terpecah jadi 3 bagian dan tersembunyi di tempat berbeda:</p>
+    <ul>
+      <li>Kode sumber HTML (lihat dengan Ctrl+U / View Source)</li>
+      <li>Berkas CSS (cek <code>css/style.css</code>)</li>
+      <li>Atribut tersembunyi di elemen halaman ini (encode base64)</li>
+    </ul>
+
+    <!-- elemen dengan potongan flag ke-3, dalam bentuk base64 di atribut data-secret -->
+    <div id="mystery-box" data-secret="NTE5aHR9" style="display:none;"></div>
+
+    <p class="reveal-hint">Halo dari CSS: <span class="css-hint"></span></p>
+  </div>
+
+</body>
+</html>
